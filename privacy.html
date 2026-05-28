@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Privacy policy for Covenant Couples." />
+    <title>Privacy policy — Covenant Couples</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" id="link-home" href="./">
+        <img src="./assets/logo.svg" width="36" height="36" alt="" />
+        <span>Covenant Couples</span>
+      </a>
+      <a class="nav-cta" id="link-open-app" href="#">Open web app</a>
+    </header>
+
+    <main id="main" class="legal-main">
+      <h1>Privacy policy</h1>
+      <p class="legal-updated">Last updated: May 28, 2026</p>
+      <p class="legal-lede">
+        Covenant Couples is built for privacy. This page describes what the app does with information in plain
+        language. It is not legal advice. Questions: <a id="link-support" href="mailto:michael@walkingriver.com"
+          >michael@walkingriver.com</a
+        >.
+      </p>
+
+      <section class="legal-card" aria-labelledby="p-none">
+        <h2 id="p-none">What we do not do</h2>
+        <ul>
+          <li>We do not require an account, email, or name to use the app.</li>
+          <li>We do not run in-app advertising or sell personal data.</li>
+          <li>
+            We do not read your shared messages—Share uses your device’s own share sheet; we never receive a copy.
+          </li>
+        </ul>
+      </section>
+
+      <section class="legal-card" aria-labelledby="p-device">
+        <h2 id="p-device">On this device</h2>
+        <p>
+          Your session (context, preferences, and the suggestion you see) is held in memory while you use a flow. It is
+          cleared when you finish a session the app way (e.g. <strong>Done</strong> on the suggestion screen) or you start
+          a fresh path from the home screen. We do not upload a “profile” of you to our servers.
+        </p>
+        <p>
+          A small <strong>setting is saved in your browser</strong> (local storage): whether you allow optional AI
+          suggestions. It has no name or contact data—just that on/off choice, so it persists between visits.
+        </p>
+        <p>
+          If you use AI suggestions, we also store a <strong>random anonymous id</strong> locally (a UUID) so repeat
+          requests from your device can be routed efficiently by our AI provider. It is not your name, email, or an
+          advertising identifier.
+        </p>
+      </section>
+
+      <section class="legal-card" aria-labelledby="p-ai">
+        <h2 id="p-ai">Optional AI</h2>
+        <p>
+          If you leave <strong>Allow AI suggestions</strong> on (in About) and the app is built with a proxy URL, the app
+          may send a <strong>single structured JSON request</strong> to our Cloudflare Worker containing the same kind of
+          data you already entered in the app (preferences, context, and matcher metadata). The worker calls an AI
+          provider to return text. <strong>Turn the toggle off</strong> to use only built-in templates—then no request is
+          sent for AI.
+        </p>
+        <p>
+          That network path is subject to the privacy practices of <strong>Cloudflare</strong> (hosting the worker and
+          often the static app) and the <strong>AI provider</strong> used by the worker, in addition to your own network
+          and device settings.
+        </p>
+      </section>
+
+      <section class="legal-card" aria-labelledby="p-share">
+        <h2 id="p-share">Share &amp; copy</h2>
+        <p>
+          When you tap <strong>Share</strong>, the visible suggestion text (including any invite line and link we add) is
+          passed to your operating system or browser share UI. Who receives it is entirely your choice. When you
+          <strong>Copy</strong>, text goes to your clipboard locally.
+        </p>
+      </section>
+
+      <section class="legal-card" aria-labelledby="p-pwa">
+        <h2 id="p-pwa">PWA &amp; technical notes</h2>
+        <p>
+          As a Progressive Web App, the browser may <strong>cache</strong> files so the app loads offline or faster. That
+          is normal browser behavior. Hosting may log technical data (such as IP address for HTTPS requests) like any
+          website.
+        </p>
+      </section>
+
+      <section class="legal-card" aria-labelledby="p-children">
+        <h2 id="p-children">Children</h2>
+        <p>The app is intended for adults in a marriage context. It is not directed at children.</p>
+      </section>
+
+      <section class="legal-card" aria-labelledby="p-changes">
+        <h2 id="p-changes">Changes</h2>
+        <p>
+          If our practices change in a meaningful way, we will update this page and the “Last updated” date. Continued use
+          after a change means you accept the updated policy.
+        </p>
+      </section>
+
+      <p>
+        <a class="legal-back" href="./eula.html">Terms of use (EULA)</a>
+        ·
+        <a class="legal-back" href="./">Back to home</a>
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="./privacy.html">Privacy policy</a>
+          <a href="./eula.html">Terms of use</a>
+          <a id="link-support-footer" href="mailto:michael@walkingriver.com">Support</a>
+        </div>
+        <p class="footer-note">
+          Covenant Couples is not therapy or crisis care. If you face abuse, addiction, or severe conflict, seek
+          qualified help and trusted faith leaders when appropriate.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/site-config.js"></script>
+    <script src="./js/apply-config.js"></script>
+  </body>
+</html>

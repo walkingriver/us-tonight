@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Covenant Couples app icon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a4d52"/>
+      <stop offset="55%" stop-color="#1e3638"/>
+      <stop offset="100%" stop-color="#152428"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4ead8"/>
+      <stop offset="45%" stop-color="#e8d5b8"/>
+      <stop offset="100%" stop-color="#c9a87a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" ry="112" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="112" ry="112" fill="none" stroke="#000" stroke-opacity="0.12" stroke-width="8"/>
+  <g fill="none" stroke="url(#ring)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="208" cy="256" r="92"/>
+    <circle cx="304" cy="256" r="92"/>
+  </g>
+  <circle cx="392" cy="148" r="5" fill="#f4ead8" opacity="0.85"/>
+</svg>

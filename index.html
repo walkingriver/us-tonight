@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Covenant Couples helps married couples choose respectful, private ideas for time together—tonight, together."
+    />
+    <title>Covenant Couples — Tonight, together</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" id="top">
+        <img src="./assets/logo.svg" width="36" height="36" alt="" />
+        <span>Covenant Couples</span>
+      </a>
+      <a class="nav-cta" id="link-open-app" href="#">Open web app</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-heading">
+        <svg class="hero-rings" viewBox="0 0 512 512" aria-hidden="true">
+          <defs>
+            <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f4ead8" />
+              <stop offset="50%" stop-color="#e8d5b8" />
+              <stop offset="100%" stop-color="#c9a87a" />
+            </linearGradient>
+          </defs>
+          <g fill="none" stroke="url(#ringGrad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" transform="scale(0.85) translate(40 40)">
+            <circle cx="208" cy="256" r="92" />
+            <circle cx="304" cy="256" r="92" />
+          </g>
+        </svg>
+        <div class="hero-inner">
+          <p class="hero-eyebrow">Private · modest · invitation-only</p>
+          <h1 id="hero-heading">Tonight, together</h1>
+          <p class="hero-lede">
+            One gentle suggestion for your evening—built for married couples. Your flow stays on this device; suggestions
+            are invitations, not obligations.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" id="link-open-app-hero" href="#">Open the web app</a>
+            <a class="btn btn--ghost" href="#benefits">See what it does</a>
+          </div>
+          <div class="store-row" aria-label="App stores">
+            <a
+              class="store-badge store-badge--soon"
+              id="link-app-store"
+              href="#"
+              aria-disabled="true"
+              aria-label="App Store listing (coming soon)"
+              >App Store — coming soon</a
+            >
+            <a
+              class="store-badge store-badge--soon"
+              id="link-play-store"
+              href="#"
+              aria-disabled="true"
+              aria-label="Google Play listing (coming soon)"
+              >Google Play — coming soon</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="benefits" aria-labelledby="benefits-heading">
+        <div class="section__inner">
+          <h2 id="benefits-heading">Made for real evenings</h2>
+          <p class="section-intro">
+            Set tonight’s vibe, blend two preference profiles, and get a modest match you can copy or share—without
+            accounts or pressure.
+          </p>
+          <div class="benefits">
+            <article class="benefit-card">
+              <h3>Respectful by design</h3>
+              <p>
+                Ideas stay tasteful and invitation-focused—aligned with the same editorial standards used inside the app.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Private on your phone</h3>
+              <p>
+                Preferences and matching run on your device. Optional AI uses only a structured summary when you turn it
+                on—no names or contact fields.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Both of you, or a solo surprise</h3>
+              <p>
+                Walk through “Tonight’s vibe” together, tune wife and husband sliders, or use Solo surprise when you want a
+                playful guess.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Meet in the middle</h3>
+              <p>
+                Optional “meet in the middle” on intimacy and blind mode help you stay considerate when preferences differ.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Copy &amp; share natively</h3>
+              <p>
+                Copy suggestion text locally, or use your device share sheet—only what you send leaves your hands.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Install as a PWA</h3>
+              <p>
+                Add the web app to your home screen for a focused experience—same gentle flow, easy to open before date
+                night.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="shots-heading">
+        <div class="section__inner">
+          <h2 id="shots-heading">Inside the app</h2>
+          <p class="section-intro">
+            Captured from the real UI in portrait phone size. Regenerate anytime with
+            <code>npm run site:capture</code> from the main project.
+          </p>
+          <div class="shots">
+            <figure class="shot">
+              <img
+                src="./assets/screenshots/home.png"
+                width="390"
+                height="844"
+                alt="Home screen with Tonight together headline and two main buttons"
+                loading="lazy"
+              />
+              <figcaption>Home — your starting place for tonight.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img
+                src="./assets/screenshots/context.png"
+                width="390"
+                height="844"
+                alt="Tonight’s vibe screen with chips and evening focus"
+                loading="lazy"
+              />
+              <figcaption>Tonight’s vibe — context chips and evening focus.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img
+                src="./assets/screenshots/partners.png"
+                width="390"
+                height="844"
+                alt="Both of you preferences for wife and husband"
+                loading="lazy"
+              />
+              <figcaption>Both of you — thoughtful sliders for each person.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img
+                src="./assets/screenshots/reveal.png"
+                width="390"
+                height="844"
+                alt="Suggestion reveal with copy and share actions"
+                loading="lazy"
+              />
+              <figcaption>Your suggestion — copy, share, and optional AI refinement.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img
+                src="./assets/screenshots/solo.png"
+                width="390"
+                height="844"
+                alt="Solo surprise flow"
+                loading="lazy"
+              />
+              <figcaption>Solo surprise — a playful path when you want it.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img
+                src="./assets/screenshots/about.png"
+                width="390"
+                height="844"
+                alt="About page in the app"
+                loading="lazy"
+              />
+              <figcaption>About — how AI, copy, and privacy work in plain language.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-panel" aria-labelledby="cta-heading">
+        <h2 id="cta-heading">Ready for tonight?</h2>
+        <p>Open the web app on your phone, add it to your home screen, and keep it between the two of you.</p>
+        <a class="btn btn--primary" id="link-open-app-footer" href="#">Open the web app</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a id="link-about" href="#">About (in app)</a>
+          <a id="link-privacy" href="./privacy.html">Privacy policy</a>
+          <a id="link-eula" href="./eula.html">Terms of use</a>
+          <a id="link-support" href="mailto:michael@walkingriver.com">Support</a>
+        </div>
+        <p class="footer-note">
+          Covenant Couples is not therapy or crisis care. If you face abuse, addiction, or severe conflict, seek qualified
+          help and trusted faith leaders when appropriate.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/site-config.js"></script>
+    <script src="./js/apply-config.js"></script>
+  </body>
+</html>
