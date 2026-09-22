@@ -10,9 +10,15 @@
     return base + (path.charAt(0) === '/' ? path : '/' + path);
   }
 
-  function pwa(path) {
-    if (!c.pwaBaseUrl) return '#';
-    return c.pwaBaseUrl.replace(/\/$/, '') + (path.charAt(0) === '/' ? path : '/' + path);
+  function betaSignupUrl() {
+    if (!c.betaSignupEmail) return null;
+    var subject = c.betaSignupSubject || 'UsTonight beta';
+    return (
+      'mailto:' +
+      encodeURIComponent(c.betaSignupEmail) +
+      '?subject=' +
+      encodeURIComponent(subject)
+    );
   }
 
   function set(id, url) {
@@ -20,10 +26,10 @@
     if (el && url) el.href = url;
   }
 
-  set('link-open-app', pwa(c.paths.openApp || '/home'));
-  set('link-open-app-hero', pwa(c.paths.openApp || '/home'));
-  set('link-open-app-footer', pwa(c.paths.openApp || '/home'));
-  set('link-about', pwa(c.paths.about || '/about'));
+  var beta = betaSignupUrl();
+  set('link-beta', beta);
+  set('link-beta-hero', beta);
+  set('link-beta-footer', beta);
   set('link-privacy', marketing(c.paths.privacy || '/privacy.html'));
   set('link-eula', marketing(c.paths.eula || '/eula.html'));
   set('link-home', marketing('/'));
@@ -42,10 +48,12 @@
     appStore.href = c.appStoreUrl;
     appStore.removeAttribute('aria-disabled');
     appStore.classList.remove('store-badge--soon');
+    appStore.textContent = 'Download on the App Store';
   }
   if (c.playStoreUrl && playStore) {
     playStore.href = c.playStoreUrl;
     playStore.removeAttribute('aria-disabled');
     playStore.classList.remove('store-badge--soon');
+    playStore.textContent = 'Get it on Google Play';
   }
 })();

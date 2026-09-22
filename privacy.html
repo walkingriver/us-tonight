@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Privacy policy for Covenant Couples." />
-    <title>Privacy policy — Covenant Couples</title>
+    <meta name="description" content="Privacy policy for UsTonight." />
+    <title>Privacy policy — UsTonight</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
   </head>
@@ -14,19 +14,18 @@
     <header class="site-header">
       <a class="brand" id="link-home" href="./">
         <img src="./assets/logo.svg" width="36" height="36" alt="" />
-        <span>Covenant Couples</span>
+        <span>UsTonight</span>
       </a>
-      <a class="nav-cta" id="link-open-app" href="#">Open web app</a>
+      <a class="nav-cta" id="link-beta" href="mailto:michael@walkingriver.com?subject=UsTonight%20beta%20%E2%80%94%20interested%20couple">Join the beta</a>
     </header>
 
     <main id="main" class="legal-main">
       <h1>Privacy policy</h1>
-      <p class="legal-updated">Last updated: May 28, 2026</p>
+      <p class="legal-updated">Last updated: September 8, 2026</p>
       <p class="legal-lede">
-        Covenant Couples is built for privacy. This page describes what the app does with information in plain
-        language. It is not legal advice. Questions: <a id="link-support" href="mailto:michael@walkingriver.com"
-          >michael@walkingriver.com</a
-        >.
+        UsTonight is built for privacy. This page describes what the native iPhone and Android apps do with information
+        in plain language. It is not legal advice. Questions:
+        <a id="link-support" href="mailto:michael@walkingriver.com">michael@walkingriver.com</a>.
       </p>
 
       <section class="legal-card" aria-labelledby="p-none">
@@ -34,6 +33,7 @@
         <ul>
           <li>We do not require an account, email, or name to use the app.</li>
           <li>We do not run in-app advertising or sell personal data.</li>
+          <li>We do not upload your preference profiles to our servers for matching.</li>
           <li>
             We do not read your shared messages—Share uses your device’s own share sheet; we never receive a copy.
           </li>
@@ -48,29 +48,21 @@
           a fresh path from the home screen. We do not upload a “profile” of you to our servers.
         </p>
         <p>
-          A small <strong>setting is saved in your browser</strong> (local storage): whether you allow optional AI
-          suggestions. It has no name or contact data—just that on/off choice, so it persists between visits.
-        </p>
-        <p>
-          If you use AI suggestions, we also store a <strong>random anonymous id</strong> locally (a UUID) so repeat
-          requests from your device can be routed efficiently by our AI provider. It is not your name, email, or an
-          advertising identifier.
+          A small <strong>setting is saved on your phone</strong>: whether you allow optional AI suggestions. It has no
+          name or contact data—just that on/off choice, so it persists between visits.
         </p>
       </section>
 
       <section class="legal-card" aria-labelledby="p-ai">
-        <h2 id="p-ai">Optional AI</h2>
+        <h2 id="p-ai">Optional on-device AI</h2>
         <p>
-          If you leave <strong>Allow AI suggestions</strong> on (in About) and the app is built with a proxy URL, the app
-          may send a <strong>single structured JSON request</strong> to our Cloudflare Worker containing the same kind of
-          data you already entered in the app (preferences, context, and matcher metadata). The worker calls an AI
-          provider to return text. <strong>Turn the toggle off</strong> to use only built-in templates—then no request is
-          sent for AI.
+          If you turn on <strong>Allow AI suggestions</strong> in About, the app may use your phone’s on-device AI
+          (where supported by your device and operating system) to refine a suggestion. Processing stays on your
+          phone—nothing is sent to us for AI enhancement.
         </p>
         <p>
-          That network path is subject to the privacy practices of <strong>Cloudflare</strong> (hosting the worker and
-          often the static app) and the <strong>AI provider</strong> used by the worker, in addition to your own network
-          and device settings.
+          On devices without on-device AI support, the built-in template matcher still works. Turn the toggle off to use
+          only built-in templates.
         </p>
       </section>
 
@@ -78,17 +70,16 @@
         <h2 id="p-share">Share &amp; copy</h2>
         <p>
           When you tap <strong>Share</strong>, the visible suggestion text (including any invite line and link we add) is
-          passed to your operating system or browser share UI. Who receives it is entirely your choice. When you
+          passed to your operating system share UI. Who receives it is entirely your choice. When you
           <strong>Copy</strong>, text goes to your clipboard locally.
         </p>
       </section>
 
-      <section class="legal-card" aria-labelledby="p-pwa">
-        <h2 id="p-pwa">PWA &amp; technical notes</h2>
+      <section class="legal-card" aria-labelledby="p-web">
+        <h2 id="p-web">This website</h2>
         <p>
-          As a Progressive Web App, the browser may <strong>cache</strong> files so the app loads offline or faster. That
-          is normal browser behavior. Hosting may log technical data (such as IP address for HTTPS requests) like any
-          website.
+          This marketing site may log standard technical data (such as IP address for HTTPS requests) like any website.
+          It does not receive your in-app session data.
         </p>
       </section>
 
@@ -120,8 +111,8 @@
           <a id="link-support-footer" href="mailto:michael@walkingriver.com">Support</a>
         </div>
         <p class="footer-note">
-          Covenant Couples is not therapy or crisis care. If you face abuse, addiction, or severe conflict, seek
-          qualified help and trusted faith leaders when appropriate.
+          UsTonight is not therapy or crisis care. If you face abuse, addiction, or severe conflict, seek qualified help
+          and trusted faith leaders when appropriate.
         </p>
       </div>
     </footer>
