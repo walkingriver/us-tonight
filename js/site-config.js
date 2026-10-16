@@ -10,8 +10,8 @@ window.CC_SITE_CONFIG = {
   betaSignupEmail: 'michael@walkingriver.com',
   betaSignupSubject: 'UsTonight beta — interested couple',
   paths: {
-    privacy: '/privacy.html',
-    eula: '/eula.html',
+    privacy: '/privacy',
+    eula: '/eula',
   },
   /** Set when store listings exist */
   appStoreUrl: null,
