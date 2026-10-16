@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Deploy GitHub Pages redirects
 
 on:
   push:
@@ -27,7 +27,9 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          # The site now lives on Cloudflare Pages (ustonight.walkingriver.com).
+          # GitHub Pages only serves redirects so old links keep working.
+          path: redirect
 
       - id: deployment
         uses: actions/deploy-pages@v4

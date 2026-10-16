@@ -1,8 +1,9 @@
 {
-  "name": "covenant-couples-site",
+  "name": "us-tonight",
   "private": true,
-  "description": "Static marketing site for Covenant Couples (GitHub Pages)",
+  "description": "Static marketing site for UsTonight (Cloudflare Pages)",
   "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp -R index.html privacy.html eula.html .nojekyll css js assets dist/",
     "capture": "node scripts/capture-screenshots.mjs"
   },
   "devDependencies": {

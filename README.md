@@ -1,8 +1,8 @@
 # UsTonight — marketing site
 
-Static HTML + CSS for **GitHub Pages**. Native apps ship from the private [covenant-couples-app](https://github.com/walkingriver/covenant-couples-app) repo.
+Static HTML + CSS on **Cloudflare Pages**. Native apps ship from the private [covenant-couples-app](https://github.com/walkingriver/covenant-couples-app) repo.
 
-**Live URL:** https://walkingriver.github.io/covenant-couples-site/
+**Live URL:** https://ustonight.walkingriver.com/ (Cloudflare Pages, project `us-tonight`)
 
 | Page | URL |
 |------|-----|
@@ -12,21 +12,22 @@ Static HTML + CSS for **GitHub Pages**. Native apps ship from the private [coven
 | Beta signup | mailto link on home (see `js/site-config.js`) |
 | Support | michael@walkingriver.com |
 
-## GitHub Pages deploy
+## Deploy (Cloudflare Pages)
 
-Workflow `.github/workflows/deploy-pages.yml` publishes on every push to `main`.
+Cloudflare Pages project **us-tonight** is connected to this repo and deploys on every push to `main`.
 
-**One-time repo setup:**
+- Build command: `npm run build` (copies the static files into `dist/`)
+- Build output: `dist`
+- Custom domain: `ustonight.walkingriver.com`
 
-1. GitHub → **walkingriver/covenant-couples-site** → **Settings** → **Pages**
-2. **Build and deployment** → Source: **GitHub Actions**
-3. Push to `main` (or run the workflow manually under **Actions**)
+The old GitHub Pages address (`walkingriver.com/us-tonight/`) now serves only the pages in `redirect/`, which send
+visitors to the same page on the new domain. `.github/workflows/deploy-pages.yml` publishes them.
 
 ## Configure URLs
 
 Edit `js/site-config.js`:
 
-- `marketingBaseUrl` — GitHub Pages origin (no trailing slash)
+- `marketingBaseUrl` — site origin (no trailing slash)
 - `supportEmail` — store / support contact
 - `betaSignupEmail` / `betaSignupSubject` — beta interest mailto
 - `appStoreUrl` / `playStoreUrl` — set when TestFlight / Play closed testing links exist

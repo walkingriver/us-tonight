@@ -21,7 +21,7 @@
 
     <main id="main" class="legal-main">
       <h1>Privacy policy</h1>
-      <p class="legal-updated">Last updated: September 8, 2026</p>
+      <p class="legal-updated">Last updated: October 16, 2026</p>
       <p class="legal-lede">
         UsTonight is built for privacy. This page describes what the native iPhone and Android apps do with information
         in plain language. It is not legal advice. Questions:
@@ -32,7 +32,12 @@
         <h2 id="p-none">What we do not do</h2>
         <ul>
           <li>We do not require an account, email, or name to use the app.</li>
-          <li>We do not run in-app advertising or sell personal data.</li>
+          <li>We do not show ads, sell in-app purchases, or sell personal data. The app is free.</li>
+          <li>
+            The app does not connect to the internet. On Android it does not request network permission at all, so
+            nothing you enter can leave your phone through the app.
+          </li>
+          <li>We do not use analytics, crash reporting, or tracking of any kind.</li>
           <li>We do not upload your preference profiles to our servers for matching.</li>
           <li>
             We do not read your shared messages—Share uses your device’s own share sheet; we never receive a copy.
@@ -56,13 +61,14 @@
       <section class="legal-card" aria-labelledby="p-ai">
         <h2 id="p-ai">Optional on-device AI</h2>
         <p>
-          If you turn on <strong>Allow AI suggestions</strong> in About, the app may use your phone’s on-device AI
-          (where supported by your device and operating system) to refine a suggestion. Processing stays on your
-          phone—nothing is sent to us for AI enhancement.
+          On phones that support it, the app uses your phone’s built-in on-device AI (Gemini Nano on Android, Apple
+          Intelligence on iPhone) to refine a suggestion. This is on by default where available. Processing stays on
+          your phone—nothing is sent to us or anyone else for AI enhancement. Your phone’s operating system, not the app,
+          downloads and updates the on-device model.
         </p>
         <p>
-          On devices without on-device AI support, the built-in template matcher still works. Turn the toggle off to use
-          only built-in templates.
+          On phones without on-device AI, the built-in dice-roll matcher picks the suggestion instead. To use only the
+          built-in matcher, turn off <strong>Allow AI suggestions</strong> in About.
         </p>
       </section>
 
