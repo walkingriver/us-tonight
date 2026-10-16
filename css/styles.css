@@ -327,6 +327,27 @@ a:hover {
   }
 }
 
+@media (min-width: 960px) {
+  .shots {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.trailer-frame {
+  margin: 0;
+  border-radius: var(--cc-radius);
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(28, 20, 36, 0.14);
+  background: #f3ece6;
+}
+
+.trailer-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 .shot {
   margin: 0;
   background: #fff;
