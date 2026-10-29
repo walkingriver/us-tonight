@@ -341,11 +341,13 @@ a:hover {
   background: #f3ece6;
 }
 
-.trailer-frame video {
+.trailer-frame video,
+.trailer-frame iframe {
   display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+  border: 0;
 }
 
 .shot {
